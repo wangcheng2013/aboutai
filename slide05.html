@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成式AI浪潮</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .wave-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .wave-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .explosion-text {
+            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .metric-highlight {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 10px;
+            height: 8px;
+            animation: progress 3s ease-in-out infinite;
+        }
+        @keyframes progress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">生成式人工智能浪潮</h1>
+                <p class="text-2xl text-gray-600">从GPT-3.0到AI产业的大爆发</p>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-6">
+                <!-- GPT-3突破 -->
+                <div class="wave-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-rocket text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">GPT-3突破</h3>
+                        <p class="text-gray-600">2020年里程碑</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">参数量</span>
+                            <span class="text-2xl font-bold metric-highlight">1750亿</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">训练数据</span>
+                            <span class="text-xl font-bold metric-highlight">45TB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">能力突破</span>
+                            <span class="text-lg font-bold text-green-600">涌现能力</span>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-blue-200 px-2 py-1 rounded">技术突破</span>
+                                大模型的"智能涌现"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ChatGPT爆发 -->
+                <div class="wave-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-fire text-3xl text-white explosion-text"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">ChatGPT爆发</h3>
+                        <p class="text-gray-600">2022年11月30日</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">用户数</span>
+                            <span class="text-2xl font-bold explosion-text">1亿+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">达到时间</span>
+                            <span class="text-xl font-bold explosion-text">2个月</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">技术突破</span>
+                            <span class="text-lg font-bold text-green-600">RLHF</span>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-red-200 px-2 py-1 rounded">现象级</span>
+                                AI消费级应用爆发
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DeepSeek现象 -->
+                <div class="wave-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bolt text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">DeepSeek现象</h3>
+                        <p class="text-gray-600">2023年</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">用户增长</span>
+                            <span class="text-2xl font-bold" style="background: linear-gradient(135deg, #8A2BE2, #4B0082); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">1亿+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">达到时间</span>
+                            <span class="text-xl font-bold" style="color: #8A2BE2;">1周</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">技术特色</span>
+                            <span class="text-sm font-bold text-purple-600">开源大模型</span>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-purple-200 px-2 py-1 rounded">现象级</span>
+                                中国AI大模型代表
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 应用百花齐放 -->
+                <div class="wave-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-layer-group text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">应用百花齐放</h3>
+                        <p class="text-gray-600">2023年至今</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">应用数量</span>
+                            <span class="text-2xl font-bold" style="background: linear-gradient(135deg, #00C853, #2E7D32); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5,000+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">覆盖行业</span>
+                            <span class="text-lg font-bold text-green-600">20+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">创新应用</span>
+                            <span class="text-sm font-bold text-green-600">AIGC、智能体等</span>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-green-200 px-2 py-1 rounded">全面爆发</span>
+                                创新应用层出不穷
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部洞察 -->
+            <div class="mt-12 text-center">
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">为什么会发生</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        大量的数据积累标注、算力的持续提升、（Transformer）算法的突破、创造了AI大爆发基础的条件。
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        先行者的押注成功，带来生成式AI技术的大爆炸，<span class="bg-yellow-200 px-2 py-1 rounded">人机交互的新范式、大语言模型涌现的智力</span>点燃大众热情。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI应用大爆发</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .app-category {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .app-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .app-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 6px 8px;
+            text-align: center;
+            transition: all 0.2s ease;
+            margin: 1px 0;
+        }
+        .app-item:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: scale(1.05);
+        }
+        .category-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-6">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-8">
+                <h1 class="text-5xl font-black text-gray-800 mb-4">AI产品应用大爆发</h1>
+                <p class="text-xl text-gray-600">20+个细分领域全面开花</p>
+            </div>
+            
+            <!-- 应用分类网格 -->
+            <div class="app-grid">
+                <!-- 内容创作 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-pen-fancy text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI写作</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">ChatGPT</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">DeepSeek</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Gemini</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图像生成 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-palette text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI图像</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Midjourney</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Stable Diffusion</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">即梦AI</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 视频生成 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-video text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI视频</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Sora</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Runway</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">可灵AI</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 语音技术 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-microphone text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI语音</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">ElevenLabs</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">IndexTTS</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">cosyvoice</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 音乐创作 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-music text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI音乐</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Suno AI</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Udio</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">海绵音乐</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 办公效率 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-briefcase text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI办公</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Microsoft 365</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Notion AI</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">AIPPT</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 编程开发 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-code text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI编程</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">GitHub Copilot</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Cursor</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Codeium</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 搜索问答 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-search text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI搜索</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Perplexity</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Baidu Chat</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Kimi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 智能体 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-robot text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI智能体</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">AutoGPT</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">AgentGPT</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">joyAgent</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 设计工具 -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-pencil-ruler text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">AI设计</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Canva AI</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Adobe Firefly</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">Figma AI</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 更多应用... -->
+                <div class="app-category bg-white rounded-2xl p-3 shadow-lg">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-ellipsis-h text-4xl category-icon mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">更多应用</h3>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">AI翻译</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">AI教育</p>
+                        </div>
+                        <div class="app-item">
+                            <p class="text-sm font-medium text-gray-700">AI医疗</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

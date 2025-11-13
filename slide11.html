@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI娱乐教育工具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .app-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .app-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .trending-fire {
+            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fire 1.5s ease-in-out infinite;
+        }
+        @keyframes fire {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .user-metric {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">AI娱乐教育工具</h1>
+                <p class="text-2xl text-gray-600">消费级应用的爆发</p>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-6">
+                <!-- AI陪伴 -->
+                <div class="app-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-2xl text-white trending-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">AI陪伴</h3>
+                        <p class="text-gray-600">情感交互</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Character.AI</span>
+                            <span class="text-sm text-red-500 font-bold">爆款</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">星野</span>
+                            <span class="text-sm text-gray-500">国内热门</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">VoW</span>
+                            <span class="text-sm text-gray-500">语音陪伴</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-pink-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold user-metric">2000万+</div>
+                            <p class="text-xs text-gray-600">月活跃用户</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI音乐 -->
+                <div class="app-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-music text-2xl text-white trending-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">AI音乐</h3>
+                        <p class="text-gray-600">音乐创作</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Suno AI</span>
+                            <span class="text-sm text-purple-500 font-bold">热门</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">海绵音乐</span>
+                            <span class="text-sm text-gray-500">字节出品</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">SkyMusic</span>
+                            <span class="text-sm text-gray-500">昆仑万维</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-purple-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold user-metric">500万+</div>
+                            <p class="text-xs text-gray-600">月活跃用户</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI教育 -->
+                <div class="app-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">AI教育</h3>
+                        <p class="text-gray-600">个性化学习</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Khan AI</span>
+                            <span class="text-sm text-green-500 font-bold">权威</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Duolingo</span>
+                            <span class="text-sm text-gray-500">语言学习</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">作业帮</span>
+                            <span class="text-sm text-gray-500">国内领先</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-green-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold user-metric">3000万+</div>
+                            <p class="text-xs text-gray-600">月活跃用户</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI游戏 -->
+                <div class="app-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-gamepad text-2xl text-white trending-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">AI游戏</h3>
+                        <p class="text-gray-600">游戏生成</p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">AI Dungeon</span>
+                            <span class="text-sm text-orange-500 font-bold">创新</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Scenario</span>
+                            <span class="text-sm text-gray-500">游戏素材</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Rosebud</span>
+                            <span class="text-sm text-gray-500">游戏开发</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-orange-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold user-metric">100万+</div>
+                            <p class="text-xs text-gray-600">月活跃用户</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部洞察 -->
+            <div class="mt-12 text-center">
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">赛道洞察</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        娱乐教育工具展现<span class="bg-pink-200 px-2 py-1 rounded">情感化</span>、<span class="bg-purple-200 px-2 py-1 rounded">个性化</span>趋势，
+                        主要面向C端用户，以移动端为主要载体
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

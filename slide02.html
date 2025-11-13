@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI现象观察</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .phenomenon-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .phenomenon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .data-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">AI浪潮来势汹汹</h1>
+                <p class="text-2xl text-gray-600">四大现象揭示AI浪潮的来临</p>
+            </div>
+            
+            <!-- 现象网格 -->
+            <div class="grid grid-cols-2 gap-8">
+                <!-- AI新闻爆发 -->
+                <div class="phenomenon-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-newspaper text-3xl text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">AI新闻爆发</h3>
+                            <p class="text-gray-600">媒体关注度持续升温</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">日均AI相关新闻</span>
+                            <span class="text-3xl font-bold data-highlight">1000+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">社交媒体讨论量</span>
+                            <span class="text-3xl font-bold data-highlight">3亿+</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-yellow-200 px-2 py-1 rounded">热点事件</span>
+                                ChatGPT发布、DeepSeek问世、AI绘画爆火...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI应用爆发 -->
+                <div class="phenomenon-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-rocket text-3xl text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">AI应用爆发</h3>
+                            <p class="text-gray-600">创新产品层出不穷</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">AI原生应用数量</span>
+                            <span class="text-3xl font-bold data-highlight">5,000+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">月活跃用户</span>
+                            <span class="text-3xl font-bold data-highlight">10亿+</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-green-200 px-2 py-1 rounded">热门应用</span>
+                                ChatGPT、Midjourney、Claude、Stable Diffusion...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI资本市场 -->
+                <div class="phenomenon-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-chart-line text-3xl text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">AI资本市场</h3>
+                            <p class="text-gray-600">投资热度持续高涨</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2024年全球AI投资</span>
+                            <span class="text-3xl font-bold data-highlight">$3000亿+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">五年复合增长率</span>
+                            <span class="text-3xl font-bold data-highlight">31.9%</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-blue-200 px-2 py-1 rounded">重大融资</span>
+                                OpenAI 400亿美元、Anthropic 20亿美元...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 政策导向 -->
+                <div class="phenomenon-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-landmark text-3xl text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">政策导向</h3>
+                            <p class="text-gray-600">国家战略高度重视</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">国家AI战略</span>
+                            <span class="text-2xl font-bold data-highlight pulse-animation">全面推进</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">产业支持政策</span>
+                            <span class="text-2xl font-bold data-highlight pulse-animation">持续加码</span>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+                            <p class="text-sm text-gray-700">
+                                <span class="bg-purple-200 px-2 py-1 rounded">政策亮点</span>
+                                人工智能+行动、教育数字化转型...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

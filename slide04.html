@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI发展历史</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('image/人工智能.png') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: 0;
+        }
+        .timeline-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: absolute;
+            width: 350px;
+        }
+        .timeline-item:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            z-index: 10;
+        }
+        .milestone-icon {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+        }
+        .timeline-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .title-section {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="timeline-container" style="position: relative; z-index: 1;">
+        <!-- 标题区域 -->
+        <div class="title-section">
+            <h1 class="text-4xl font-black text-gray-800 mb-2">人工智能发展历史</h1>
+            <p class="text-xl text-gray-600">1943-2020：四个关键发展阶段</p>
+        </div>
+        <!-- 第一阶段：理论萌芽期 -->
+        <div class="timeline-item bg-white rounded-xl p-6 shadow-lg" style="bottom: 8%; left: 5%;">
+            <div class="flex items-center mb-4">
+                <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex-shrink-0 flex items-center justify-center mr-4">
+                    <i class="fas fa-seedling text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">理论萌芽期</h3>
+                    <p class="text-sm text-gray-600">1943-1974年</p>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-purple-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1943年</p>
+                        <p class="text-xs text-gray-600">McCulloch-Pitts神经元模型</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-purple-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1950年</p>
+                        <p class="text-xs text-gray-600">图灵测试提出 (Alan Turing)</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-purple-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1956年</p>
+                        <p class="text-xs text-gray-600">达特茅斯会议，AI学科诞生</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二阶段：第一次AI寒冬 -->
+        <div class="timeline-item bg-white rounded-xl p-6 shadow-lg" style="bottom: 20%; left: 25%;">
+            <div class="flex items-center mb-4">
+                <div class="w-14 h-14 bg-gradient-to-br from-gray-400 to-gray-600 rounded-2xl flex-shrink-0 flex items-center justify-center mr-4">
+                    <i class="fas fa-snowflake text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">第一次AI寒冬</h3>
+                    <p class="text-sm text-gray-600">1974-1987年</p>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-gray-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1973年</p>
+                        <p class="text-xs text-gray-600">Lighthill报告，AI研究遇冷</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-gray-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1974-1980</p>
+                        <p class="text-xs text-gray-600">研究资金锐减，AI寒冬开始</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-gray-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1980年代</p>
+                        <p class="text-xs text-gray-600">专家系统带来短暂复苏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第三阶段：机器学习兴起 -->
+        <div class="timeline-item bg-white rounded-xl p-6 shadow-lg" style="bottom: 40%; left: 45%;">
+            <div class="flex items-center mb-4">
+                <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex-shrink-0 flex items-center justify-center mr-4">
+                    <i class="fas fa-robot text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">机器学习兴起</h3>
+                    <p class="text-sm text-gray-600">1987-2006年</p>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1986年</p>
+                        <p class="text-xs text-gray-600">反向传播算法 (Rumelhart等人)</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">1995年</p>
+                        <p class="text-xs text-gray-600">支持向量机 (Vapnik)</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-1.5 mr-2"></div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">2001年</p>
+                        <p class="text-xs text-gray-600">随机森林 (Breiman)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第四阶段：深度学习时代 -->
+        <div class="timeline-item bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 shadow-xl" style="top: 20%; right: 10%; width: 400px;">
+            <div class="flex items-center mb-5">
+                <div class="milestone-icon w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mr-4">
+                    <i class="fas fa-brain text-3xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">深度学习时代</h3>
+                    <p class="text-sm text-gray-600">2006-2020年</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-white/80 backdrop-blur-sm rounded-xl p-3 border border-green-100">
+                    <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-2">
+                        <i class="fas fa-network-wired text-green-600"></i>
+                    </div>
+                    <p class="text-sm font-medium text-gray-800">2006年</p>
+                    <p class="text-xs text-gray-600">深度学习突破</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-xl p-3 border border-green-100">
+                    <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-2">
+                        <i class="fas fa-image text-green-600"></i>
+                    </div>
+                    <p class="text-sm font-medium text-gray-800">2012年</p>
+                    <p class="text-xs text-gray-600">AlexNet突破</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-xl p-3 border border-green-100">
+                    <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-2">
+                        <i class="fas fa-language text-green-600"></i>
+                    </div>
+                    <p class="text-sm font-medium text-gray-800">2013年</p>
+                    <p class="text-xs text-gray-600">Word2Vec发布</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-xl p-3 border border-green-100">
+                    <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-2">
+                        <i class="fas fa-chess text-green-600"></i>
+                    </div>
+                    <p class="text-sm font-medium text-gray-800">2016年</p>
+                    <p class="text-xs text-gray-600">AlphaGo战胜李世石</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI行业变化</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .industry-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .industry-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .transformation-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .case-study {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 16px;
+            color: white;
+            padding: 20px;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">AI带来的行业变化</h1>
+                <p class="text-2xl text-gray-600">四大行业的智能化转型</p>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-6">
+                <!-- 教育行业 -->
+                <div class="industry-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-graduation-cap text-2xl text-white transformation-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">教育行业</h3>
+                        <p class="text-gray-600">个性化学习革命</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-blue-50 rounded-xl">
+                            <i class="fas fa-robot text-blue-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">AI助教</span>
+                                <p class="text-xs text-gray-500">24小时在线答疑</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-green-50 rounded-xl">
+                            <i class="fas fa-chart-line text-green-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">自适应学习</span>
+                                <p class="text-xs text-gray-500">个性化学习路径</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-purple-50 rounded-xl">
+                            <i class="fas fa-magic text-purple-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">智能评估</span>
+                                <p class="text-xs text-gray-500">实时学习反馈</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4 class="text-lg font-bold mb-2">典型案例</h4>
+                        <p class="text-sm opacity-90">Khan Academy的AI助教，为学生提供个性化辅导</p>
+                    </div>
+                </div>
+                
+                <!-- 医疗行业 -->
+                <div class="industry-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heartbeat text-2xl text-white transformation-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">医疗行业</h3>
+                        <p class="text-gray-600">精准医疗升级</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-red-50 rounded-xl">
+                            <i class="fas fa-eye text-red-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">影像诊断</span>
+                                <p class="text-xs text-gray-500">AI辅助阅片</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-blue-50 rounded-xl">
+                            <i class="fas fa-dna text-blue-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">药物研发</span>
+                                <p class="text-xs text-gray-500">加速新药发现</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-green-50 rounded-xl">
+                            <i class="fas fa-user-md text-green-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">智能问诊</span>
+                                <p class="text-xs text-gray-500">初步病情判断</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4 class="text-lg font-bold mb-2">典型案例</h4>
+                        <p class="text-sm opacity-90">IBM Watson辅助癌症诊断，准确率超过90%</p>
+                    </div>
+                </div>
+                
+                <!-- 零售行业 -->
+                <div class="industry-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shopping-cart text-2xl text-white transformation-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">零售行业</h3>
+                        <p class="text-gray-600">购物体验重塑</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-green-50 rounded-xl">
+                            <i class="fas fa-brain text-green-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">智能推荐</span>
+                                <p class="text-xs text-gray-500">个性化商品推荐</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-blue-50 rounded-xl">
+                            <i class="fas fa-comments text-blue-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">智能客服</span>
+                                <p class="text-xs text-gray-500">24小时在线服务</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-purple-50 rounded-xl">
+                            <i class="fas fa-chart-bar text-purple-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">需求预测</span>
+                                <p class="text-xs text-gray-500">库存优化管理</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4 class="text-lg font-bold mb-2">典型案例</h4>
+                        <p class="text-sm opacity-90">亚马逊推荐系统贡献35%的销售额</p>
+                    </div>
+                </div>
+                
+                <!-- 旅游行业 -->
+                <div class="industry-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-plane text-2xl text-white transformation-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">旅游行业</h3>
+                        <p class="text-gray-600">智慧旅行体验</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-orange-50 rounded-xl">
+                            <i class="fas fa-map text-orange-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">智能规划</span>
+                                <p class="text-xs text-gray-500">个性化行程定制</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-blue-50 rounded-xl">
+                            <i class="fas fa-language text-blue-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">实时翻译</span>
+                                <p class="text-xs text-gray-500">跨语言沟通</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-green-50 rounded-xl">
+                            <i class="fas fa-camera text-green-500 mr-3"></i>
+                            <div>
+                                <span class="text-gray-700 font-medium">AR导览</span>
+                                <p class="text-xs text-gray-500">沉浸式体验</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4 class="text-lg font-bold mb-2">典型案例</h4>
+                        <p class="text-sm opacity-90">Booking.com的AI客服处理80%的用户咨询</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

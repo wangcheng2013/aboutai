@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们应该怎么做</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .strategy-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .strategy-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .timeline-phase {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .action-item {
+            transition: all 0.2s ease;
+        }
+        .action-item:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+            transform: scale(1.02);
+        }
+        .priority-high {
+            border-left: 4px solid #ef4444;
+        }
+        .priority-medium {
+            border-left: 4px solid #f59e0b;
+        }
+        .priority-low {
+            border-left: 4px solid #10b981;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">我们应该怎么做</h1>
+                <p class="text-2xl text-gray-600">下一步计划与关键定力</p>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-12">
+                <!-- 提升计划 -->
+                <div class="strategy-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-calendar-alt text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800">AI共生计划</h3>
+                            <p class="text-gray-600">分阶段实施策略</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-bold timeline-phase">第一阶段</h4>
+                                <span class="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full">紧急</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="action-item flex items-center p-2 priority-high bg-white rounded-lg text-sm">
+                                    <i class="fas fa-graduation-cap text-blue-500 mr-2 text-sm"></i>
+                                    <span class="text-gray-700">学习AI工具和概念</span>
+                                </div>
+                                <div class="action-item flex items-center p-2 priority-high bg-white rounded-lg text-sm">
+                                    <i class="fas fa-search text-green-500 mr-2 text-sm"></i>
+                                    <span class="text-gray-700">识别工作场景的AI应用机会</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-bold timeline-phase">第二阶段</h4>
+                                <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-0.5 rounded-full">重要</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="action-item flex items-center p-2 priority-medium bg-white rounded-lg text-sm">
+                                    <i class="fas fa-cogs text-purple-500 mr-2 text-sm"></i>
+                                    <span class="text-gray-700">深度集成AI到工作流程</span>
+                                </div>
+                                <div class="action-item flex items-center p-2 priority-medium bg-white rounded-lg text-sm">
+                                    <i class="fas fa-users text-orange-500 mr-2 text-sm"></i>
+                                    <span class="text-gray-700">培养人机协作能力</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-bold timeline-phase">第三阶段</h4>
+                                <span class="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded-full">长期</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="action-item flex items-center p-2 priority-low bg-white rounded-lg text-sm">
+                                    <i class="fas fa-lightbulb text-yellow-500 mr-2 text-sm"></i>
+                                    <span class="text-gray-700">通过AI武装成为超级个体</span>
+                                </div>
+                                <div class="action-item flex items-center p-2 priority-low bg-white rounded-lg text-sm">
+                                    <i class="fas fa-chart-line text-red-500 mr-2 text-sm"></i>
+                                    <span class="text-gray-700">与AI时代共舞</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 终局思维 -->
+                <div class="strategy-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-chess text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800">关键定力</h3>
+                            <p class="text-gray-600">长远战略思考</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        
+                        <div class="space-y-4">
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <h5 class="font-bold text-gray-800 mb-2">不可替代的能力</h5>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li>• 创造性思维和直觉</li>
+                                    <li>• 情感共鸣和同理心</li>
+                                    <li>• 复杂的社会协作</li>
+                                    <li>• 价值判断和伦理决策</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <h5 class="font-bold text-gray-800 mb-2">新机遇</h5>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li>• AI工具的开发者和维护者</li>
+                                    <li>• 人机协作的设计师</li>
+                                    <li>• AI时代的创意工作者</li>
+                                    <li>• 跨领域整合专家</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">关键洞察</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                AI不会完全替代人类，而是创造<span class="bg-green-200 px-2 py-1 rounded">新的人机协作模式</span>。
+                                未来属于能够善用AI工具、发挥人类独特价值的人。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

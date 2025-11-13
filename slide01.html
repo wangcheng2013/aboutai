@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI产品时代的洞察</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .hero-text {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .slide-in {
+            animation: slideIn 1.2s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out 0.5s both;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .brain-pattern {
+            background-image: radial-gradient(circle at 25% 25%, #667eea 0%, transparent 50%),
+                              radial-gradient(circle at 75% 75%, #764ba2 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="w-full h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- 背景装饰元素 -->
+        <div class="absolute inset-0 brain-pattern opacity-10"></div>
+        <div class="floating-element absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full opacity-20"></div>
+        <div class="floating-element absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20" style="animation-delay: -2s;"></div>
+        
+        <!-- 主要内容区域 -->
+        <div class="relative z-10 max-w-6xl mx-auto px-8 text-center">
+            <!-- 主标题 -->
+            <div class="slide-in">
+                <h1 class="text-8xl font-black hero-text leading-tight mb-8">
+                    AI产品时代的洞察
+                </h1>
+            </div>
+            
+            <!-- 副标题 -->
+            <div class="fade-in">
+                <p class="text-3xl text-gray-600 font-light mb-12 leading-relaxed">
+                    产品经理视角下对AI的观察、研究与思考
+                </p>
+            </div>
+            
+            <!-- 核心思维方式展示 -->
+            <!-- <div class="fade-in grid grid-cols-4 gap-8 mt-16">
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-4xl text-blue-600 mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">本质思维</h3>
+                    <p class="text-gray-600 text-sm">探寻事物根本</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-4xl text-green-600 mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">全局思维</h3>
+                    <p class="text-gray-600 text-sm">把握整体格局</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-4xl text-purple-600 mb-4">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">终局思维</h3>
+                    <p class="text-gray-600 text-sm">预见未来走向</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-4xl text-orange-600 mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">系统性思维</h3>
+                    <p class="text-gray-600 text-sm">理解相互关联</p>
+                </div>
+            </div> -->
+            
+            <!-- 底部引用 -->
+            <div class="fade-in mt-16">
+                <p class="text-lg text-gray-500 italic">
+                    王大成 20251104
+                </p>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

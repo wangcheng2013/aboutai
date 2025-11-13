@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI超级入口</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .ranking-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .ranking-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .rank-number {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .agent-visual {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .platform-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">AI超级入口的竞争格局</h1>
+                <p class="text-2xl text-gray-600">平台竞争与Agent生态</p>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-12">
+                <!-- 平台排名 -->
+                <div class="ranking-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-trophy text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800">最新排名</h3>
+                            <p class="text-gray-600">2025年市场份额</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- 第一梯队 -->
+                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="platform-logo bg-gradient-to-br from-blue-500 to-purple-600 mr-4">C</div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-800">ChatGPT</h4>
+                                        <p class="text-gray-600">OpenAI</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-3xl font-bold rank-number">#1</div>
+                                    <div class="text-sm text-gray-500">绝对领先</div>
+                                </div>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-3 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第二梯队 -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 rounded-2xl p-4">
+                                <div class="flex items-center mb-3">
+                                    <div class="platform-logo bg-gradient-to-br from-red-500 to-pink-500 mr-3">G</div>
+                                    <div>
+                                        <h5 class="text-lg font-bold text-gray-800">Gemini</h5>
+                                        <p class="text-sm text-gray-500">Google</p>
+                                    </div>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-600">#2</div>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-2xl p-4">
+                                <div class="flex items-center mb-3">
+                                    <div class="platform-logo bg-gradient-to-br from-green-500 to-blue-500 mr-3">百</div>
+                                    <div>
+                                        <h5 class="text-lg font-bold text-gray-800">文心一言</h5>
+                                        <p class="text-sm text-gray-500">百度</p>
+                                    </div>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-600">#2</div>
+                            </div>
+                        </div>
+                        
+                        <!-- 第三梯队 -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 rounded-2xl p-4">
+                                <div class="flex items-center mb-3">
+                                    <div class="platform-logo bg-gradient-to-br from-purple-500 to-indigo-500 mr-3">D</div>
+                                    <div>
+                                        <h5 class="text-lg font-bold text-gray-800">DeepSeek</h5>
+                                        <p class="text-sm text-gray-500">深度求索</p>
+                                    </div>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-600">#3</div>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-2xl p-4">
+                                <div class="flex items-center mb-3">
+                                    <div class="platform-logo bg-gradient-to-br from-orange-500 to-red-500 mr-3">豆</div>
+                                    <div>
+                                        <h5 class="text-lg font-bold text-gray-800">豆包</h5>
+                                        <p class="text-sm text-gray-500">字节跳动</p>
+                                    </div>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-600">#3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Agent概念解析 -->
+                <div class="ranking-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-robot text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800">什么是Agent？</h3>
+                            <p class="text-gray-600">AI智能体概念</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">核心定义</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Agent是能够<span class="bg-blue-200 px-2 py-1 rounded">自主理解、规划、执行</span>复杂任务的AI系统，
+                                具备使用工具、记忆交互、多步推理的能力。
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-brain text-2xl text-blue-600"></i>
+                                </div>
+                                <h5 class="text-sm font-bold text-gray-800">理解</h5>
+                                <p class="text-xs text-gray-500">自然语言理解</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-chess text-2xl text-green-600"></i>
+                                </div>
+                                <h5 class="text-sm font-bold text-gray-800">规划</h5>
+                                <p class="text-xs text-gray-500">任务分解策略</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-tools text-2xl text-purple-600"></i>
+                                </div>
+                                <h5 class="text-sm font-bold text-gray-800">执行</h5>
+                                <p class="text-xs text-gray-500">工具调用操作</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">Agent平台特色</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    插件生态系统
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    自定义技能开发
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    多Agent协作
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

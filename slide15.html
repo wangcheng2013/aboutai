@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI职能变化</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .function-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .function-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .ai-impact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .automation-level {
+            height: 8px;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 4px;
+            animation: progress 2s ease-in-out;
+        }
+        @keyframes progress {
+            from { width: 0%; }
+            to { width: var(--target-width); }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">AI带来的职能变化</h1>
+                <p class="text-2xl text-gray-600">五大职能的智能化转型</p>
+            </div>
+            
+            <div class="grid grid-cols-5 gap-6">
+                <!-- 供应链 -->
+                <div class="function-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-truck text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">供应链</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold ai-impact">85%</div>
+                            <p class="text-xs text-gray-600">预测准确率提升</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">需求预测</span>
+                                <span class="text-gray-800 font-medium">智能预测</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 85%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">库存管理</span>
+                                <span class="text-gray-800 font-medium">动态优化</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 75%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">物流调度</span>
+                                <span class="text-gray-800 font-medium">路径优化</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 研发 -->
+                <div class="function-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-flask text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">研发</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold ai-impact">60%</div>
+                            <p class="text-xs text-gray-600">研发效率提升</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">代码生成</span>
+                                <span class="text-gray-800 font-medium">自动编程</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 80%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">测试用例</span>
+                                <span class="text-gray-800 font-medium">智能生成</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 65%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">文档编写</span>
+                                <span class="text-gray-800 font-medium">自动文档</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 生产 -->
+                <div class="function-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cogs text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">生产</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold ai-impact">90%</div>
+                            <p class="text-xs text-gray-600">质检准确率</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">质量检测</span>
+                                <span class="text-gray-800 font-medium">视觉识别</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 90%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">设备维护</span>
+                                <span class="text-gray-800 font-medium">预测性维护</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 80%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">流程优化</span>
+                                <span class="text-gray-800 font-medium">智能调度</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 营销 -->
+                <div class="function-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullhorn text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">营销</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold ai-impact">75%</div>
+                            <p class="text-xs text-gray-600">转化率提升</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">内容生成</span>
+                                <span class="text-gray-800 font-medium">营销文案</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 85%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">用户画像</span>
+                                <span class="text-gray-800 font-medium">精准定位</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 80%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">A/B测试</span>
+                                <span class="text-gray-800 font-medium">智能优化</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 运营 -->
+                <div class="function-card bg-white rounded-3xl p-6 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-bar text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">运营</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold ai-impact">65%</div>
+                            <p class="text-xs text-gray-600">运营效率提升</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">数据分析</span>
+                                <span class="text-gray-800 font-medium">智能洞察</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 90%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">报告生成</span>
+                                <span class="text-gray-800 font-medium">自动报告</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 80%"></div>
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">流程自动化</span>
+                                <span class="text-gray-800 font-medium">RPA+AI</span>
+                            </div>
+                            <div class="automation-level" style="--target-width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

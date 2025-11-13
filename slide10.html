@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI生产力工具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .tool-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .tool-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .metric-highlight {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .feature-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-black text-gray-800 mb-6">AI生产力工具</h1>
+                <p class="text-2xl text-gray-600">专业场景的效率革命</p>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8">
+                <!-- 编程开发 -->
+                <div class="tool-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-code text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">编程开发</h3>
+                        <p class="text-gray-600">代码生成与辅助</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Claude Code</span>
+                            <span class="feature-badge">最受欢迎</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Cursor</span>
+                            <span class="text-sm text-gray-500">AI原生IDE</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Codeium</span>
+                            <span class="text-sm text-gray-500">免费使用</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold metric-highlight">82%</div>
+                            <p class="text-sm text-gray-600">开发者采用率</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 设计创意 -->
+                <div class="tool-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-red-500 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-palette text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">设计创意</h3>
+                        <p class="text-gray-600">视觉内容生成</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Midjourney</span>
+                            <span class="feature-badge">艺术风格</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Stable Diffusion</span>
+                            <span class="text-sm text-gray-500">丰富生态</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Flux</span>
+                            <span class="text-sm text-gray-500">开源免费</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-pink-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold metric-highlight">20亿人次+</div>
+                            <p class="text-sm text-gray-600">月活跃</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 办公协作 -->
+                <div class="tool-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">办公协作</h3>
+                        <p class="text-gray-600">智能办公套件</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Microsoft 365</span>
+                            <span class="feature-badge">全面集成</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Notion AI</span>
+                            <span class="text-sm text-gray-500">知识管理</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">飞书</span>
+                            <span class="text-sm text-gray-500">协作平台</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-green-50 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold metric-highlight">60%+</div>
+                            <p class="text-sm text-gray-600">企业采用率</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部洞察 -->
+            <div class="mt-12 text-center">
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">赛道洞察</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        AI生产力工具正在重塑<span class="bg-green-200 px-2 py-1 rounded">知识工作</span>的范式，
+                        从辅助工具向<span class="bg-blue-200 px-2 py-1 rounded">智能伙伴</span>演进，大幅提升专业效率
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            window.parent.postMessage('go-next', '*');
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.parent.postMessage('go-prev', '*');
+        }
+    });
+</script>
+</body>
+</html>

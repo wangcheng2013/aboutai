@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全局思维</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+        .essence-card {
+            transition: all 0.3s ease;
+            border-left: 5px solid transparent;
+        }
+        .essence-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .question-mark {
+            font-size: 5rem;
+            line-height: 1;
+            color: #3b82f6;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="w-full h-screen flex items-center justify-center p-8">
+        <div class="max-w-5xl mx-auto w-full">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-black text-gray-800 mb-4">为什么了解三大AI应用方向？</h1>
+                <p class="text-xl text-gray-600">全局思维：超越局部视角，把握AI应用全貌</p>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-12">
+                <!-- 全局思维 -->
+                <div class="essence-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mr-6">
+                            <i class="fas fa-globe-americas text-3xl text-blue-600"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800">全局思维</h2>
+                    </div>
+                    <div class="pl-22 space-y-4 text-gray-700 text-lg leading-relaxed">
+                        <p>全局思维帮助我们<strong class="text-blue-600">突破局限，把握整体</strong>：</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex-shrink-0 flex items-center justify-center mr-3 mt-1">1</span>
+                                <div>
+                                    <strong class="text-blue-700">突破个人视角</strong><br>
+                                    <span class="text-gray-600">从个人经验中跳脱，看到AI在生产力工具、娱乐教育到行业应用等各领域的全面影响</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex-shrink-0 flex items-center justify-center mr-3 mt-1">2</span>
+                                <div>
+                                    <strong class="text-blue-700">超越认知局限</strong><br>
+                                    <span class="text-gray-600">打破惯性思维，关注AI应用场景间的协同效应，发现跨领域创新机会</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex-shrink-0 flex items-center justify-center mr-3 mt-1">3</span>
+                                <div>
+                                    <strong class="text-blue-700">洞悉AI发展全貌</strong><br>
+                                    <span class="text-gray-600">从技术成熟度到市场需求，全面评估AI应用前景，理解局部与整体的关系</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 关键问题 -->
+                <div class="essence-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border-2 border-blue-100">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg transform rotate-6">
+                            <i class="fas fa-lightbulb text-4xl text-yellow-500"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                            你觉得哪个更细分的方向上更有商业机会？
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                window.parent.postMessage('go-next', '*');
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                window.parent.postMessage('go-prev', '*');
+            }
+        });
+    </script>
+</body>
+</html>
